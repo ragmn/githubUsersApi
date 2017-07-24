@@ -1,0 +1,72 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.header {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+
+input[type=search]::-webkit-search-cancel-button {
+    -webkit-appearance: searchfield-cancel-button;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.inline-block {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.bold-label {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.margin-1em {
+    margin: 1em;
+}
+
+.bold-label-red {
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-left:15px;
+    color:red;
+}
+
+.bold-label-red-30 {
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-left:30px;
+    color:red;
+}
+

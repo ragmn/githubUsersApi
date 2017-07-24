@@ -1,0 +1,52 @@
+﻿@model GithubUsersApi.Models.UserRepo
+@if (@Model.UserDetails != null)
+{
+    <div class="margin-1em">
+        <img width="75" class="img-rounded" src="@Model.UserDetails.Avatar_url" />
+        <div class="inline-block">
+            <div class="bold-label">
+                @Model.UserDetails.Name
+            </div>
+            <div>@Model.UserDetails.Location</div>
+        </div>
+    </div>
+    <div>
+        @if (Model.Repository.Count > 0)
+        {
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Stargazers Count</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var data in Model.Repository)
+                    {
+                        <tr>
+                            <td>@data.Name</td>
+                            <td>@data.Stargazers_count</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <div>
+                <p class="bold-label-red">
+                    No repository found for the user!!
+                </p>
+            </div>
+        }
+    </div>
+
+}
+else
+{
+    <div>
+        <p class="bold-label-red">
+            invalid github user!!
+        </p>
+    </div>
+}

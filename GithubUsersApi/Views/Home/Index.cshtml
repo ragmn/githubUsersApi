@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="header">
+    <div class="col-xs-3">
+        <input class="form-control" id="txtUserName" type="search" placeholder="Enter github user name" autofocus required />
+    </div> 
+    
+    <button id="btnSearch" title="Search" class="btn btn-primary btn-md">Search</button>
+    <button id="btnRefresh" title="Reset" class="btn btn-danger btn-md"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+
+</div>
+
+<div class="row">
+    <div id="validator" class="hide bold-label-red-30">
+        <p>
+            invalid github user!!
+        </p>
+    </div>
+    <div id="content" class="col-md-4">
+
+    </div>
+
+</div>
